@@ -60,7 +60,11 @@ public class MineGrid {
         return (i >= 0 && i < this.mineInformation.length) && (j >= 0 && j < this.mineInformation[0].length);
     }
 
-    private boolean isMine(int i, int j) {
+    boolean isMine(int i, int j) {
         return this.mineInformation[i][j] == MineGrid.MINE;
+    }
+
+    int getCellContent(int i, int j) {
+        return this.mineInformation[i][j];
     }
 }

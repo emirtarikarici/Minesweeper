@@ -11,7 +11,7 @@ public class MineSweeper {
         JFrame frame = new JFrame("Minesweeper | # number of mines: " + NUMBER_OF_MINES);
         frame.add(new MineSweeperGUI(SIZE, SIZE, NUMBER_OF_MINES));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setSize(1000,600);
+        frame.setSize(600,600);
         frame.setVisible(true);
 
     }
